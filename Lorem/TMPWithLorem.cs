@@ -5,9 +5,9 @@ namespace UnityEngine.UI
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class TMPWithLorem : MonoBehaviour
     {
-        [SerializeField] private int paragraphs = 1;
-        [SerializeField] private int sentencesPerParagraph = 1;
-        [SerializeField] private int wordsPerSentence = 1;
+        [SerializeField, Range(1, 5)] private int paragraphs = 1;
+        [SerializeField, Range(1, 10)] private int sentencesPerParagraph = 1;
+        [SerializeField, Range(1, 50)] private int wordsPerSentence = 1;
 
         private TextMeshProUGUI textMeshPro;
 
